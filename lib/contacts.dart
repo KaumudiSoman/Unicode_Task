@@ -45,14 +45,6 @@ class Contacts extends State<ContactsPage> {
         appBar: AppBar(
           title: const Text("Contacts Screen"),
           backgroundColor: const Color.fromARGB(236, 255, 187, 0),
-          // actions: [
-          //   IconButton(
-          //       onPressed: () {
-          //         Navigator.of(context).push(
-          //             MaterialPageRoute(builder: (context) => WeatherPage()));
-          //       },
-          //       icon: const Icon(Icons.cloud))
-          // ],
         ),
         body: isLoading
             ? const Center(child: CircularProgressIndicator())

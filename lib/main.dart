@@ -147,22 +147,19 @@ class _HomePageState extends State<HomePage> {
                         const SizedBox(
                           height: 10,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                              bottom: 9, left: 10, right: 300),
-                          child: IconButton(
-                              icon: const Icon(
-                                Icons.calendar_month,
-                              ),
-                              iconSize: 40,
-                              tooltip: "Select DOB",
-                              color: const Color.fromARGB(236, 255, 187, 0),
-                              onPressed: _pickFromDate),
+                        Row(
+                          children: [
+                            IconButton(
+                                icon: const Icon(
+                                  Icons.calendar_month,
+                                ),
+                                iconSize: 40,
+                                tooltip: "Select DOB",
+                                color: const Color.fromARGB(236, 255, 187, 0),
+                                onPressed: _pickFromDate),
+                            Text("DOB : $dob"),
+                          ],
                         ),
-                        Padding(
-                            padding: const EdgeInsets.only(
-                                left: 3, bottom: 7, right: 150),
-                            child: Text("DOB : $dob")),
                         Padding(
                             padding: const EdgeInsets.only(
                                 top: 7, right: 120, left: 120),
